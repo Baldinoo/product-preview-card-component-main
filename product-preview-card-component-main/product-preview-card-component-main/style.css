@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Orelega+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 14px 3px 33px 3px rgba(0,0,0,0.24); 
+  box-shadow: 14px 3px 33px 3px rgba(0,0,0,0.24);
+}
+.img {
+  width: 100%;
+}
+.img-desktop {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.img-mobile {
+  display: none;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 50%;
+  margin: 25px;
+}
+.text-1 {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  opacity: 70%;
+}
+.text-2 {
+  color: hsl(212, 21%, 14%);
+  font-size: 22px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 144%;
+}
+
+.text-3 {
+  font-size: 17px;
+  color: hsl(228, 12%, 48%);
+  opacity: 70%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.valor {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.depois {
+  color: hsl(158, 36%, 37%);
+  font-size: 40px;
+  font-family: "Orelega One", cursive;
+  font-weight: 400;
+}
+.antes {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  opacity: 70%;
+}
+.botton {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.botton:hover {
+  background-color: rgb(0, 58, 13);
+  transition: 0,3 ease-in-out;
+}
+footer {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 630px) {
+  
+  .img-mobile {
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+  }
+  .img-desktop {
+    display: none;
+    
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+}
